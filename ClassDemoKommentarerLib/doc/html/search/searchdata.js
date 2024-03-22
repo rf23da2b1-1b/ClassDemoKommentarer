@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "acgp",
+  0: "acdgpu",
   1: "p",
   2: "c",
-  3: "ag"
+  3: "adgpu"
 };
 
 var indexSectionNames =

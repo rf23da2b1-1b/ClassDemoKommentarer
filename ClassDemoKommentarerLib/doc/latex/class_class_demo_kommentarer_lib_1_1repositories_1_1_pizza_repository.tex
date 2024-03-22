@@ -1,23 +1,46 @@
 \hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository}{}\doxysection{Class\+Demo\+Kommentarer\+Lib.\+repositories.\+Pizza\+Repository Class Reference}
 \label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository}\index{ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}}
+
+
+Repositoriet indeholder Pizzaer og understøtter CRUD operationer.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a1c7d2f22fa0930d23260ff7e4edea2dc}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a1c7d2f22fa0930d23260ff7e4edea2dc}} 
-{\bfseries Pizza\+Repository} (bool mock\+Data=false)
-\item 
+\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a1c7d2f22fa0930d23260ff7e4edea2dc}{Pizza\+Repository}} (bool mock\+Data=false)
+\begin{DoxyCompactList}\small\item\em Initialiserer repositoriet med en tom liste af pizzaer, medmindre mockdata et sat til true. \end{DoxyCompactList}\item 
 List$<$ \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} $>$ \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_ae4adc831b98ea0ae9bbabef2cdef3980}{Get\+All}} ()
 \begin{DoxyCompactList}\small\item\em Giver en kopi af den interne liste. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3cd193636b066e6953cb73ed660dac63}{Get\+By\+Id}} (int id)
 \begin{DoxyCompactList}\small\item\em Finder en pizza med det givne id. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a9d08eb0d0d41c5c53e345919e71ec294}{Add}} (\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} pizza)
 \begin{DoxyCompactList}\small\item\em Tilføjer den angivne pizza til listen. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3c701cad12a3e9e02cbbcf875c698644}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3c701cad12a3e9e02cbbcf875c698644}} 
-\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} {\bfseries Delete} (int id)
-\item 
-\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a4a5c769f0c010a77e99744eac511a5e2}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a4a5c769f0c010a77e99744eac511a5e2}} 
-\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} {\bfseries Update} (int id, \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} pizza)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3c701cad12a3e9e02cbbcf875c698644}{Delete}} (int id)
+\begin{DoxyCompactList}\small\item\em Sletter en pizza fra listen, med det angivne id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a4a5c769f0c010a77e99744eac511a5e2}{Update}} (int id, \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} pizza)
+\begin{DoxyCompactList}\small\item\em Finder en pizza med det givne id og updaterer med værdierne fra det angivne pizza objekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositoriet indeholder Pizzaer og understøtter CRUD operationer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a1c7d2f22fa0930d23260ff7e4edea2dc}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a1c7d2f22fa0930d23260ff7e4edea2dc}} 
+\index{ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}!PizzaRepository@{PizzaRepository}}
+\index{PizzaRepository@{PizzaRepository}!ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}}
+\doxysubsubsection{\texorpdfstring{PizzaRepository()}{PizzaRepository()}}
+{\footnotesize\ttfamily Class\+Demo\+Kommentarer\+Lib.\+repositories.\+Pizza\+Repository.\+Pizza\+Repository (\begin{DoxyParamCaption}\item[{bool}]{mock\+Data = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Initialiserer repositoriet med en tom liste af pizzaer, medmindre mockdata et sat til true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mock\+Data} & Angiver om der skal udfyldes med mock data eller ej, default er false\\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -39,6 +62,29 @@ Tilføjer den angivne pizza til listen.
 \begin{DoxyReturn}{Returns}
 Den tilføjede pizza med et opdateret ID
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3c701cad12a3e9e02cbbcf875c698644}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a3c701cad12a3e9e02cbbcf875c698644}} 
+\index{ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} Class\+Demo\+Kommentarer\+Lib.\+repositories.\+Pizza\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Sletter en pizza fra listen, med det angivne id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Det id på den pizza der skal slettes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Det pizza objekt er slettet
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Hvis der ikke findes en pizza med id\textquotesingle{}et kastes denne exception\\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_ae4adc831b98ea0ae9bbabef2cdef3980}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_ae4adc831b98ea0ae9bbabef2cdef3980}} 
 \index{ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}!GetAll@{GetAll}}
 \index{GetAll@{GetAll}!ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}}
@@ -72,6 +118,33 @@ Et pizza objekt med det givne id
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Hvis der ikke findes en pizza med id\textquotesingle{}et kastes denne exception\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a4a5c769f0c010a77e99744eac511a5e2}\label{class_class_demo_kommentarer_lib_1_1repositories_1_1_pizza_repository_a4a5c769f0c010a77e99744eac511a5e2}} 
+\index{ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}!Update@{Update}}
+\index{Update@{Update}!ClassDemoKommentarerLib.repositories.PizzaRepository@{ClassDemoKommentarerLib.repositories.PizzaRepository}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}} Class\+Demo\+Kommentarer\+Lib.\+repositories.\+Pizza\+Repository.\+Update (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_class_demo_kommentarer_lib_1_1model_1_1_pizza}{Pizza}}}]{pizza }\end{DoxyParamCaption})}
+
+
+
+Finder en pizza med det givne id og updaterer med værdierne fra det angivne pizza objekt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Det id på den pizza der skal opdateres\\
+\hline
+{\em pizza} & Pizza objekt med de nye værdier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Det pizza objekt der er opdatteret
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Hvis id ikke stemmer overens med id i pizza\\
+\hline
 {\em Key\+Not\+Found\+Exception} & Hvis der ikke findes en pizza med id\textquotesingle{}et kastes denne exception\\
 \hline
 \end{DoxyExceptions}
